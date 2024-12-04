@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>An Error Occurred</h1>
+    <p id="error-message"></p>
+    <a href="/">Return to Home</a>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const message = params.get('message');
+        document.getElementById('error-message').innerText = decodeURIComponent(message);
+    </script>
+</body>
+</html>
