@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Proxy App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <h1>Spotify Proxy App</h1>
+    <div id="login">
+        <a href="/login">Log in with Spotify</a>
+    </div>
+    <div id="user-info" style="display: none;">
+        <h2 id="username"></h2>
+        <div id="playlists"></div>
+        <!-- Playback Controls -->
+        <div id="player-controls">
+            <button id="prev-button">
+                <span class="material-icons">skip_previous</span>
+            </button>
+            <button id="play-button">
+                <span class="material-icons">play_arrow</span>
+            </button>
+            <button id="pause-button">
+                <span class="material-icons">pause</span>
+            </button>
+            <button id="next-button">
+                <span class="material-icons">skip_next</span>
+            </button>
+            <button id="shuffle-button">
+                <span class="material-icons" id="shuffle-icon">shuffle</span>
+            </button>
+        </div>
+    </div>
+    <!-- Error Message Container -->
+    <div id="error-message" style="display: none;"></div>
+    <!-- Load your app.js script first -->
+    <script src="app.js"></script>
+    <!-- Then load the Spotify SDK script -->
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+</body>
+</html>
