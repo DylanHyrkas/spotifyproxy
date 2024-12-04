@@ -1,4 +1,4 @@
-##Spotify Proxy for school
+# Spotify Proxy for school
 
 spotify is blocked at our school so this is an attempt at a little workaround.
 
