@@ -12,6 +12,7 @@ app.use(express.static(__dirname + '/public'))
    .use(cors());
 
 const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
 const redirect_uri = 'https://spotifyproxy.onrender.com/callback';
 
 app.get('/login', (req, res) => {
